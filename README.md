@@ -11,7 +11,7 @@
 - `docker-compose exec mysqlDb mysql -u user_name -h localhost -p'user_password'`
 
 ## Dump from MySQL
-- `docker-compose exec mysqlDb mysqldump -u user_name -h localhost -p'user_password --all-databases > backup/dump_all.sql'`
+- `docker-compose exec mysqlDb mysqldump -u user_name -h localhost -p'user_password' --all-databases > backup/dump_all.sql`
 
 ## Restore to MySQL
-- `docker-compose exec mysqlDb mysql -u user_name -h localhost -p'user_password < backup/dump_all.sql'`
+- `docker-compose exec mysqlDb mysql -u user_name -h localhost -p'user_password' < backup/dump_all.sql`
